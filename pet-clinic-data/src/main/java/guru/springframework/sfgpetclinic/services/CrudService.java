@@ -7,8 +7,6 @@ import java.util.Set;
  */
 public interface CrudService<T, ID> {
 
-    // Close #3
-
     Set<T> findAll();
 
     T findById(ID id);
