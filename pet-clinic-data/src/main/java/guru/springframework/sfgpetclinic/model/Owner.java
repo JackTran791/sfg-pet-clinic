@@ -1,37 +1,46 @@
 package guru.springframework.sfgpetclinic.model;
 
-import java.time.LocalDate;
+import java.util.Set;
 
 /**
  * @author Jack Tran
  */
 public class Owner extends Person {
 
-    private PetType petType;
-    private Owner owner;
-    private LocalDate birthDate;
+    private String address;
+    private String city;
+    private String telephone;
+    private Set<Pet> pets;
 
-    public PetType getPetType() {
-        return petType;
+    public String getAddress() {
+        return address;
     }
 
-    public void setPetType(PetType petType) {
-        this.petType = petType;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
-    public Owner getOwner() {
-        return owner;
+    public String getCity() {
+        return city;
     }
 
-    public void setOwner(Owner owner) {
-        this.owner = owner;
+    public void setCity(String city) {
+        this.city = city;
     }
 
-    public LocalDate getBirthDate() {
-        return birthDate;
+    public String getTelephone() {
+        return telephone;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    public Set<Pet> getPets() {
+        return pets;
+    }
+
+    public void setPets(Set<Pet> pets) {
+        this.pets = pets;
     }
 }
